@@ -7,7 +7,7 @@ const BadRequestError = require('../errors/BadRequestError');
 const NotFoundError = require('../errors/NotFoundError');
 const ConflictError = require('../errors/ConflictError');
 
-const { SECRET_KEY = 'diplom' } = process.env;
+const { SECRET_KEY = 'mesto' } = process.env;
 
 module.exports.getUserById = (req, res, next) => {
   User.findById(req.user._id)
